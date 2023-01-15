@@ -5,6 +5,7 @@ import { Requests } from './components/Requests';
 
 import '@tremor/react/dist/esm/tremor.css';
 import './styles/global.css';
+import { Invoices } from './components/Invoices';
 
 function App() {
   const { activeTab } = useApp();
@@ -18,6 +19,7 @@ function App() {
         <PageTabs />
         {activeTab === 'requests' && <Requests />}
         {activeTab === 'select' && <SelectTab />}
+        {activeTab === 'invoices' && <Invoices />}
       </div>
     </div>
   );
